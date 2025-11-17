@@ -1,0 +1,11 @@
+body {
+    background-image: none;
+    background-color: var(--color-light-bg);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    align-items: start;
+}
+

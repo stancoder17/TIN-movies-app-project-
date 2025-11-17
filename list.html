@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>moviezz - register</title>
+    <title>Movies and series</title>
     <link rel="stylesheet" href="stylesheets/main.css">
-    <link rel="stylesheet" href="stylesheets/register.css">
+    <link rel="stylesheet" href="stylesheets/list.css">
 </head>
 <body>
 <header>
@@ -15,8 +15,8 @@
             <a class="navbar-text-button" id="navbar-img-button" href="#">
                 <img class="logo-img" src="images/pngtree-video-film-camera-icon-picture-image_7817710.png" alt="logo">
             </a>
-            <a class="navbar-text-button" href="#">MOVIES</a>
-            <a class="navbar-text-button" href="#">SERIES</a>
+            <a class="text-main navbar-text-button" href="#">MOVIES</a>
+            <a class="text-main navbar-text-button" href="#">SERIES</a>
         </div>
 
         <button type="button" onclick="window.location.href='login.html'">LOG IN</button>
@@ -25,43 +25,11 @@
 </header>
 
 <main>
-    <div class="main-content">
-
-        <h1 class="app-name-text">moviezz</h1>
-
-        <div class="form-container">
-            <h1>Create an account</h1>
-            <hr class="separator">
-            <form class="form-login-or-register">
-                <div class="login-or-register-inputs">
-
-                    <div class="form-firstname-lastname">
-                        <input type="text" placeholder="First name" name="lastName">
-                        <input type="text" placeholder="Last name" name="lastName">
-                    </div>
-
-                    <p class="form-additional-text">Date of birth</p>
-
-                    <div class="form-date-of-birth">
-                        <input type="date" name="dateOfBirth">
-                    </div>
-
-                    <input type="text" placeholder="Email address" name="email">
-                    <input type="password" placeholder="Password" name="password">
-                    <input type="password" placeholder="Confirm password" name="confirmPassword">
-                </div>
-
-                <div class="form-buttons-etc">
-
-                    <button class="login-or-register-button" type="submit">Register</button>
-
-                    <a class="form-additional-text" href="login.html">Already have an account?</a>
-                </div>
-            </form>
-
-        </div>
-
+    <div class="sidebar">
+        <h2 class="text-main">Filters</h2>
+        <hr class="separator">
     </div>
+    <div class="main-content"></div>
 </main>
 
 <footer>

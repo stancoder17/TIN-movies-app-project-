@@ -1,9 +1,29 @@
+/* Base & variables */
+:root {
+    --space-s: 10px;
+    --space-m: 20px;
+    --border-radius-s: 10px;
+    --border-radius-l: 20px;
+    --color-text: #868486;
+    --color-text-light: lightgray;
+    --color-accent: #125a5e;
+    --color-accent-dark: #114463;
+    --color-link: #3b9697;
+    --color-dark-bg: #0b0b1d;
+    --color-light-bg: #1c1c39;
+    --color-text-border: #125a5e;
+    --shadow-header: 0 2px 2px #0b0b1d;
+    --shadow-footer: 0 -2px 2px #0b0b1d;
+    --shadow-box: 0 0 10px rgba(0, 0, 0, .5);
+    --shadow-main: 0 0 32px #726d39;
+}
+
 * {
     font-family: "Roboto Light";
 }
 
 a {
-    color: #3b9697;
+    color: var(--color-link);
     text-decoration: none;
 }
 
@@ -21,10 +41,9 @@ body {
 button {
     display: flex;
     justify-content: center;
-    text-decoration: none;
-    border-radius: 10px;
-    background: #868486;
-    padding: 10px;
+    border-radius: var(--border-radius-s);
+    background: var(--color-text);
+    padding: var(--space-s);
     color: white;
     font-size: 20px;
     cursor: pointer;
@@ -33,7 +52,7 @@ button {
 button.second-choice {
     background: #435b5e;
     font-size: 16px;
-    margin-top: 10px;
+    margin-top: var(--space-s);
 }
 
 button:hover {
@@ -41,57 +60,51 @@ button:hover {
 }
 
 footer {
-    box-shadow: 0 -2px 2px #0b0b1d;
-    color: #868486;
-    background: #0b0b1d;
+    box-shadow: var(--shadow-footer);
+    background: var(--color-dark-bg);
     width: 100%;
 }
 
 .app-name-text {
-    text-shadow: -1px 0 #125a5e, 0 1px #125a5e, 1px 0 #125a5e, 0 -1px #125a5e, 2px 2px 20px #cccccc;
+    text-shadow: -1px 0 var(--color-text-border), 0 1px var(--color-text-border), 1px 0 var(--color-text-border), 0 -1px var(--color-text-border), 2px 2px 20px white;
     font-size: 50px;
     font-family: "Yu Gothic UI Semibold";
 }
 
 footer > * {
-    padding: 20px;
+    padding: var(--space-m);
 }
 
 .footer-links {
-    display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: var(--space-m);
 }
 
 .footer-links h5 {
     font-size: 18px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
 .form-buttons-etc {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
+    margin-top: var(--space-m);
 }
 
 .form-container {
     background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
-    border-radius: 20px;
-    padding: 20px;
+    box-shadow: var(--shadow-box);
+    border-radius: var(--border-radius-l);
+    padding: var(--space-m);
 }
 
 .form-container h1 {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: var(--space-s);
 }
 
 .form-additional-text {
     margin: 0;
-    padding-top: 15px;
-    padding-bottom: 7px;
+    padding: 15px 0 7px 0;
 }
 
 a.form-additional-text {
@@ -99,10 +112,8 @@ a.form-additional-text {
 }
 
 .form-login-or-register {
-    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 .login-or-register-inputs {
@@ -112,14 +123,14 @@ a.form-additional-text {
 
 .login-or-register-inputs input {
     font-size: 18px;
-    padding: 10px;
-    border-radius: 10px;
-    margin-bottom: 10px;
+    padding: var(--space-s);
+    border-radius: var(--border-radius-s);
+    margin-bottom: var(--space-s);
 }
 
 header {
-    box-shadow: 0 2px 2px #0b0b1d;
-    background: #0b0b1d;
+    box-shadow: var(--shadow-header);
+    background: var(--color-dark-bg);
     width: 100%;
 }
 
@@ -127,17 +138,16 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 0 5%;
 }
 
 .link-group h5 {
-    color: lightgray;
+    color: var(--color-text-light);
 }
 
 .list-unstyled li {
     list-style: none;
-    padding-bottom: 10px;
+    padding-bottom: var(--space-s);
 }
 
 .list-unstyled a:hover {
@@ -145,11 +155,11 @@ header {
 }
 
 .login-or-register-button {
-    background: #125a5e;
+    background: var(--color-accent);
 }
 
 .login-or-register-button:hover {
-    background: #114463;
+    background: var(--color-accent-dark);
 }
 
 .logo-img {
@@ -159,48 +169,53 @@ header {
 
 main {
     flex: 1 1 auto;            /* cover all remaining space between header and footer */
-    display: flex;
-    align-items: center;
     justify-content: center;
-    padding: 100px;
 }
 
 .main-content {
-    box-shadow: 0 0 32px #726d39;
+    box-shadow: var(--shadow-main);
     background: #bfba42;
-    border-radius: 20px;
-    display: flex;
+    border-radius: var(--border-radius-l);
     justify-content: center;
-    align-items: center;
 }
 
 .main-content > * {
-    margin: 20px;
+    margin: var(--space-m);
 }
 
 .navbar {
-    display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+    padding: 0 var(--space-m);
 }
 
-.navbar-button {
-    color: #868486;
-    text-decoration: none;
-    font-size: 18px;
+.navbar-text-button {
+    color: var(--color-text);
+    font-size: 20px;
 }
 
 .navbar-main-buttons {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+    gap: var(--space-m);
 }
 
 .separator {
-    margin: 20px 0;
+    margin: var(--space-m) 0;
     padding: 0;
     width: 100%;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--color-dark-bg);
+    margin: var(--space-m);
+    padding: var(--space-m);
+}
+
+.text-main {
+    color: var(--color-text);
 }
 
 #app-summary {
@@ -213,4 +228,16 @@ main {
 
 ul {
     padding: 0;
+}
+
+/* Shared flex alignment (extracted common behavior) */
+main,
+.footer-links,
+.form-buttons-etc,
+.form-login-or-register,
+.main-content,
+.navbar,
+.navbar-main-buttons {
+    display: flex;
+    align-items: center;
 }
