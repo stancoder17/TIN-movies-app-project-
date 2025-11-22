@@ -25,6 +25,10 @@ main {
     margin: 0;
 }
 
+.media-rating {
+    border-left: 1px solid var(--color-main-navy);
+}
+
 .form-container-unstyled {
     display: flex;
     flex-direction: column;

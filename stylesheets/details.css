@@ -1,0 +1,42 @@
+main {
+    background-color: var(--color-main-navy);
+    padding: 50px 50px 100px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 50%;
+
+    padding: var(--space-m);
+
+}
+
+
+.media-rating {
+    justify-content: flex-start;
+    width: auto;
+}
+
+.media-rating h1 {
+    margin: 0;
+}
+
+.media-rating h2 {
+    font-size: 100%;
+    margin: 0;
+}
+
+.rating-score {
+    font-size: 75%;
+}
+
+.rating-scale {
+    font-size: 50%;
+}
+
+.rating-stars {
+    font-size: 75%;
+}
