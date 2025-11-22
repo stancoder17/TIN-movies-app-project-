@@ -25,11 +25,159 @@
 </header>
 
 <main>
-    <div class="sidebar">
+    <div class="sidebar sidebar-left">
         <h2 class="text-main">Filters</h2>
         <hr class="separator">
+
+        <div class="form-container-unstyled">
+            <form>
+                <div class="form-inputs-container">
+
+                    <div class="form-input-group">
+
+                        <h3 class="text-main">Genre:</h3>
+
+                        <div>
+                            <input type="checkbox" id="genre-comedy" name="genres" value="comedy" checked>
+                            <label for="genre-comedy" class="text-main">Comedy</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="genre-drama" name="genres" value="drama" checked>
+                            <label for="genre-drama" class="text-main">Drama</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="genre-sci-fi" name="genres" value="sci-fi" checked>
+                            <label for="genre-sci-fi" class="text-main">Science Fiction</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="genre-action" name="genres" value="action" checked>
+                            <label for="genre-action" class="text-main">Action</label>
+                        </div>
+
+                    </div>
+
+                    <div class="form-input-group">
+
+                        <h3 class="text-main">Type:</h3>
+
+                        <div>
+                            <input type="checkbox" id="production-type-movie" name="productionType" value="movie" checked>
+                            <label for="production-type-movie" class="text-main">Movie</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="production-type-series" name="productionType" value="series" checked>
+                            <label for="production-type-series" class="text-main">Series</label>
+                        </div>
+
+                    </div>
+
+                    <div class="form-input-group">
+
+                        <h3 class="text-main">Year:</h3>
+
+                        <div>
+                            <label for="year-from" class="text-main">from</label>
+                            <select name="year-from" id="year-from">  <script>// more options will be here, it's just an example</script>
+                                <option value="1900">1900</option>
+                                <option value="1925">1925</option>
+                                <option value="1950">1950</option>
+                                <option value="1975">1975</option>
+                                <option value="2000">2000</option>
+                                <option value="2025">2025</option>
+                            </select>
+
+                            <label for="year-to" class="text-main">to</label>
+                            <select name="year-to" id="year-to">
+                                <option value="2025">2025</option>
+                                <option value="2000">2000</option>
+                                <option value="1975">1975</option>
+                                <option value="1950">1950</option>
+                                <option value="1925">1925</option>
+                                <option value="1900">1900</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-buttons-etc">
+                    <button type="submit" class="wide">Filter</button>
+                </div>
+            </form>
+        </div>
     </div>
-    <div class="main-content"></div>
+
+    <div class="main-content">
+        <a class="media-block" href="#">
+            <img class="media-poster" src="images/posters/andor.jpg" alt="Andor poster">
+
+            <div class="media-summary">
+                <h1 class="text-main">Andor</h1>
+                <h3 class="text-main production-date">(2022 - Present)</h3>
+                <h3 class="text-main"><strong>Creator: </strong>Tony Gilroy</h3>
+                <p>In perilous times fraught with intrigue and betrayal, Cassian Andor joins the fight against the tyranny of the Galactic Empire. He soon becomes a hero of the Rebellion.</p>
+            </div>
+
+            <div class="media-rating">
+                <h1>
+                    <span class="rating-stars">★</span>
+                    <span class="rating-score">8,6</span>
+                    <span class="rating-scale">/10</span>
+                </h1>
+                <h2 class="text-main">257 ratings</h2>
+            </div>
+
+        </a>
+
+        <a class="media-block" href="#">
+            <img class="media-poster" src="images/posters/rogue-one.jpg" alt="Rogue One poster">
+
+            <div class="media-summary">
+                <h1 class="text-main">Rogue One: A Star Wars Story</h1>
+                <h3 class="text-main production-date">(2016)</h3>
+                <h3 class="text-main"><strong>Director: </strong>Gareth Edwards</h3>
+                <p>In a time of conflict, a group of unlikely heroes band together on a mission to steal the plans to the Death Star, the Empire's ultimate weapon of destruction.</p>
+            </div>
+
+            <div class="media-rating">
+                <h1>
+                    <span class="rating-stars">★</span>
+                    <span class="rating-score">7,8</span>
+                    <span class="rating-scale">/10</span>
+                </h1>
+                <h2 class="text-main">741 ratings</h2>
+            </div>
+        </a>
+
+        <a class="media-block" href="#">
+            <img class="media-poster" src="images/posters/the-bear.jpg" alt="The Bear poster">
+
+            <div class="media-summary">
+                <h1 class="text-main">The Bear</h1>
+                <h3 class="text-main production-date">(2022 - Present)</h3>
+                <h3 class="text-main"><strong>Creator: </strong>Christopher Storer</h3>
+                <p>A young chef from the fine dining world returns to Chicago to run his family's sandwich shop.
+
+                </p>
+            </div>
+
+            <div class="media-rating">
+                <h1>
+                    <span class="rating-stars">★</span>
+                    <span class="rating-score">8,5</span>
+                    <span class="rating-scale">/10</span>
+                </h1>
+                <h2 class="text-main">217 ratings</h2>
+            </div>
+        </a>
+
+
+    </div>
+
 </main>
 
 <footer>

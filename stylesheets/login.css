@@ -1,0 +1,4 @@
+.main-content {
+    background: var(--color-main-yellow);
+    box-shadow: var(--shadow-main) var(--color-main-yellow-darker);
+}
