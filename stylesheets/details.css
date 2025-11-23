@@ -8,12 +8,10 @@ main {
     flex-direction: column;
     align-items: flex-start;
 
-    width: 50%;
+    width: 1000px;
 
     padding: var(--space-m);
-
 }
-
 
 .media-rating {
     justify-content: flex-start;

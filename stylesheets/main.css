@@ -39,10 +39,6 @@ a {
 }
 
 body {
-    background-image: url("../images/465137_4131809_updates_blurred.jpg");
-    background-color: #cccccc; /* used if the image is unavailable */
-    background-repeat: no-repeat;
-    background-size: cover;
     margin: 0;                 /* remove default margin */
     min-height: 100vh;
     display: flex;
@@ -80,6 +76,21 @@ button:hover {
     display: flex;
 
     padding: var(--space-m);
+}
+
+.comment-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 150px;
+    flex-shrink: 0;
+
+    padding-right: var(--space-m);
+    margin-right: var(--space-m);
+
+    border-right: 1px solid var(--color-main-navy-dark);
 }
 
 .comments-section {
@@ -288,20 +299,21 @@ main {
 }
 
 .media-summary h1 {
-    font-size: 250%;
+    font-size: 2.5vw;
     margin: var(--space-s) 0 var(--space-s) 0;
 }
 
 .media-summary h3 {
+    font-size: 1vw;
     margin: var(--space-s) 0 var(--space-s) 0;
 }
 
-.media-summary .production-date {
+.date {
     color: var(--color-text-dark);
 }
 
 .media-summary p {
-    font-size: 120%;
+    font-size: 1.2vw;
     margin: var(--space-s) 0 var(--space-s) 0;
 }
 
@@ -325,6 +337,10 @@ main {
 
 .media-block {
     display: flex;
+}
+
+.media-rating h2 {
+    font-size: 1.5vw;
 }
 
 .media-poster {
@@ -354,17 +370,17 @@ main {
 }
 
 .rating-scale {
-    font-size: 150%;
+    font-size: 2vw;
     color: var(--color-main-yellow-darker);
 }
 
 .rating-score {
-    font-size: 200%;
+    font-size: 3vw;
 }
 
 .rating-stars {
     color: gold;
-    font-size: 200%;
+    font-size: 3vw;
 }
 
 select {
@@ -436,15 +452,6 @@ select {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    width: 150px;
-
-    flex-shrink: 0;
-
-    padding-right: var(--space-m);
-    margin-right: var(--space-m);
-
-    border-right: 1px solid var(--color-main-navy-dark);
 }
 
 

@@ -1,3 +1,14 @@
+body {
+    background-image: url("../images/465137_4131809_updates_blurred.jpg");
+    background-color: #cccccc; /* used if the image is unavailable */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    padding: 50px 50px 100px;
+}
+
 .main-content {
     background: var(--color-main-yellow);
     box-shadow: var(--shadow-main) var(--color-main-yellow-darker);
