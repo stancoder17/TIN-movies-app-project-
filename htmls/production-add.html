@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add new production</title>
+    <link rel="stylesheet" href="../stylesheets/main.css">
+    <link rel="stylesheet" href="../stylesheets/production-add.css">
+</head>
+<body>
+<header>
+    <div class="navbar">
+
+        <div class="navbar-main-buttons">
+
+            <a class="navbar-text-button" id="navbar-img-button" href="#">
+                <img class="logo-img" src="../images/pngtree-video-film-camera-icon-picture-image_7817710.png" alt="logo">
+            </a>
+            <a class="text-main navbar-text-button" href="#">MOVIES</a>
+            <a class="text-main navbar-text-button" href="#">SERIES</a>
+        </div>
+
+        <button type="button" onclick="window.location.href='../htmls/login.html'">LOG IN</button>
+    </div>
+
+</header>
+
+<main>
+    <div class="main-content">
+        <div class="form-container">
+            <h1 class="text-main">Add new production</h1>
+
+            <hr class="separator">
+
+            <form class="add-form" action="details.html">
+                <div class="form-inputs-container">
+                    <input type="text" id="title" name="title" placeholder="Title" class="form-input">
+                    <input type="text" id="description" name="description" placeholder="Description" class="form-input form-input-description">
+                    <input type="text" id="creator" name="creator" placeholder="Creator" class="form-input">
+                    <label for="image" class="text-main">Poster</label>
+                    <input type="file" id="image" name="image" class="form-input form-input-file" accept="image/*">
+                    <label for="releaseDate" class="text-main">Release date</label>
+                    <input type="date" id="releaseDate" name="releaseDate" class="form-input">
+                </div>
+
+                <div class="form-buttons-etc">
+                    <button type="submit" class="btn-blue wide">Add</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</main>
+
+<footer>
+    <div class="footer-links">
+
+        <div class="link-group">
+
+            <h5 class="text-main">Top 5 Movies</h5>
+
+            <ul class="list-unstyled">
+                <li><a href="#">Star Wars: Rogue One</a></li>
+                <li><a href="#">The Lord of the Rings: The Return of the King</a></li>
+                <li><a href="#">Interstellar</a></li>
+                <li><a href="#">Avatar</a></li>
+                <li><a href="#">Indiana Jones: Raiders of the Lost Ark</a></li>
+            </ul>
+
+        </div>
+
+        <div class="link-group">
+
+            <h5 class="text-main">Top 5 Series</h5>
+
+            <ul class="list-unstyled">
+                <li><a href="#">Andor</a></li>
+                <li><a href="#">The Bear</a></li>
+                <li><a href="#">Star Wars: The Clone Wars</a></li>
+                <li><a href="#">The Mandalorian</a></li>
+                <li><a href="#">Dark</a></li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</footer>
+</body>
+</html>

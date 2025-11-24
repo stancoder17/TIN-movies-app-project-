@@ -38,3 +38,55 @@ main {
 .rating-stars {
     font-size: 75%;
 }
+
+.form-container {
+    background-color: var(--color-main-navy-dark);
+    box-shadow: none;
+
+    margin: 0;
+}
+
+input {
+    width: auto;
+    height: auto;
+}
+
+form {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+form button {
+    margin: var(--space-s) 0;
+}
+
+textarea {
+    background: var(--color-main-navy);
+    color: var(--color-text);
+    resize: none;
+    width: 95%;
+    height: 200px;
+    font-size: 18px;
+    padding: var(--space-s);
+    border-radius: var(--border-radius-s);
+    margin-bottom: var(--space-s);
+}
+
+.rating-scale-container {
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-s);
+}
+
+.radio-item-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating-radio-group h3 {
+    margin-bottom: var(--space-xs);
+}
+
