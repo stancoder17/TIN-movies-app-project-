@@ -1,3 +1,12 @@
+.comment .action-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: var(--space-m);
+    padding-left: var(--space-m);
+    border-left: 1px solid var(--color-main-navy);
+}
+
 main {
     background-color: var(--color-main-navy);
     padding: 50px 50px 100px;

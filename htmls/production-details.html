@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Andor (TV Series)</title>
     <link rel="stylesheet" href="../stylesheets/main.css">
-    <link rel="stylesheet" href="../stylesheets/details.css">
+    <link rel="stylesheet" href="../stylesheets/production-details.css">
 </head>
 <body>
 <header>
@@ -15,13 +15,26 @@
             <a class="navbar-text-button" id="navbar-img-button" href="#">
                 <img class="logo-img" src="../images/pngtree-video-film-camera-icon-picture-image_7817710.png" alt="logo">
             </a>
-            <a class="text-main navbar-text-button" href="#">MOVIES</a>
-            <a class="text-main navbar-text-button" href="#">SERIES</a>
+            <a class="text-main navbar-text-button" href="../htmls/productions.html">ALL PRODUCTIONS</a>
         </div>
 
-        <button type="button" onclick="window.location.href='../htmls/login.html'">LOG IN</button>
+        <div class="admin-panel">
+            <div class="navbar-main-buttons">
+                <a class="text-main navbar-text-button" href="../htmls/users.html">USERS</a>
+                <a class="text-main navbar-text-button" href="../htmls/ratings.html">RATINGS</a>
+                <a class="text-main navbar-text-button" href="../htmls/production-add.html">ADD PRODUCTION</a>
+            </div>
+            <div class="welcome-user">
+                <h2 class="text-main">Welcome, randomuser9419</h2>
+                <a href="../htmls/user-profile.html">
+                    <img class="user-avatar user-avatar-small" src="../images/user-avatar-example.jpg" alt="User Menu">
+                </a>
+                <a href="../htmls/login.html">
+                    <h3 class="text-main-dark">LOG OUT</h3>
+                </a>
+            </div>
+        </div>
     </div>
-
 </header>
 
 <main>
@@ -41,15 +54,15 @@
             <div class="actions-and-media-rating">
                 <div class="action-buttons">
                     <button class="btn-blue" type="button" onclick="window.location.href='../htmls/production-update.html'">Edit</button>
-                    <button class="btn-red" type="button" onclick="window.location.href='../htmls/list.html'">Delete</button>
+                    <button class="btn-red" type="button" onclick="window.location.href='productions.html'">Delete</button>
                 </div>
                 <div class="media-rating">
                     <h1>
                         <span class="rating-stars">★</span>
-                        <span class="rating-score">7,8</span>
+                        <span class="rating-score">8,6</span>
                         <span class="rating-scale">/10</span>
                     </h1>
-                    <h2 class="text-main">741 ratings</h2>
+                    <h2 class="text-main">257 ratings</h2>
                 </div>
             </div>
 
@@ -99,6 +112,11 @@
                 <div class="comment-body">
                     <p class="text-accent">Andor was every bit as good as I was hoping for. It might be the best Star Wars series to date, I used to think it was The Mandalorian but these two seasons of Andor have been flawless. Of all the Star Wars series so far this one is probably the least known character but that doesn't mean it's any less interesting. Andor is a character from one of the best Star Wars movies, Rogue One. All the reviews have been great for Andor so that got my expectations even higher and so far they've all been met. It has a real gritty feel to it compared to the other Star Wars series and the visuals are great. It's also more adult oriented compared to the other shows so far. But the cast, led by Diego Luna, is the best thing about this show. Well that and the writing. These two seasons of Andor have been nothing short of incredible and easily the best thing Star Wars has done since the original trilogy.</p>
                 </div>
+
+                <div class="action-buttons">
+                    <button class="btn-blue" type="button" onclick="window.location.href='../htmls/production-details-rating-update.html'">Edit</button>
+                    <button class="btn-red" type="button" onclick="window.location.href='#'">Delete</button>
+                </div>
             </div>
 
             <hr class="separator">
@@ -132,6 +150,10 @@
                 <div class="comment-body">
                     <p class="text-accent">Best Star Wars show. Maybe even one of the greatest TV shows ever made.</p>
                 </div>
+
+                <div class="action-buttons">
+                    <button class="btn-red" type="button" onclick="window.location.href='#'">Delete</button>
+                </div>
             </div>
 
             <hr class="separator">
@@ -163,6 +185,10 @@
 
                 <div class="comment-body">
                     <p class="text-accent">Andor Season 2 is the best Star Wars Show ever made, for real! And one of the best shows I've seen in a while. The first season was good but the second season is amazing. It's kind of sad that the viewership hasn't been the best, but it needs to be seen. Spread the word!! The performances are incredible and the scenography was so well thought with sush attention to details, that it is worth seeing. Everybody did an amazing All performances were superb, specially Denise Gough and Genevieve O'Reily. Stellan Skarsgård and Ben Mendelsohn as always were amazing as Fiona Shaw was in the first season. And last but not least, Elizabeth Dalau, Diego Luna, Adria Arjona who's acting was impressive. Highly recommend.</p>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="btn-red" type="button" onclick="window.location.href='#'">Delete</button>
                 </div>
             </div>
 
@@ -261,7 +287,7 @@
             <h5 class="text-main">Top 5 Series</h5>
 
             <ul class="list-unstyled">
-                <li><a href="#">Andor</a></li>
+                <li><a href="../htmls/production-details.html">Andor</a></li>
                 <li><a href="#">The Bear</a></li>
                 <li><a href="#">Star Wars: The Clone Wars</a></li>
                 <li><a href="#">The Mandalorian</a></li>

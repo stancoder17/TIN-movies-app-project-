@@ -94,7 +94,6 @@ button:hover {
 
 .comment {
     display: flex;
-
     padding: var(--space-m);
 }
 
@@ -108,7 +107,7 @@ button:hover {
     border-left: 1px solid var(--color-main-navy);
 }
 
-.comment-body p {
+.comment-body > * {
     margin-top: var(--space-xs);
     margin-bottom: 0;
     font-size: 1.2em;
@@ -155,6 +154,10 @@ footer {
 
 footer > * {
     padding: var(--space-m);
+}
+
+.hidden {
+    visibility: hidden;
 }
 
 .footer-links {
@@ -309,7 +312,7 @@ main {
     justify-content: center;
     align-items: center;
 
-    width: 30%;
+    width: 20%;
 }
 
 .media-rating h1 {
@@ -331,12 +334,12 @@ main {
 }
 
 .media-summary h1 {
-    font-size: 2.5vw;
+    font-size: 200%;
     margin: var(--space-s) 0 var(--space-s) 0;
 }
 
 .media-summary h3 {
-    font-size: 1vw;
+    font-size: 115%;
     margin: var(--space-s) 0 var(--space-s) 0;
 }
 
@@ -345,7 +348,7 @@ main {
 }
 
 .media-summary p {
-    font-size: 1.2vw;
+    font-size: 120%;
     margin: var(--space-s) 0 var(--space-s) 0;
 }
 
@@ -372,7 +375,7 @@ main {
 }
 
 .media-rating h2 {
-    font-size: 1.5vw;
+    font-size: 120%;
 }
 
 .media-poster {
@@ -402,17 +405,17 @@ main {
 }
 
 .rating-scale {
-    font-size: 2vw;
+    font-size: 90%;
     color: var(--color-main-yellow-darker);
 }
 
 .rating-score {
-    font-size: 3vw;
+    font-size: 130%;
 }
 
 .rating-stars {
     color: gold;
-    font-size: 3vw;
+    font-size: 130%;
 }
 
 select {
@@ -477,10 +480,16 @@ select {
     margin: var(--space-s) 0 var(--space-xs) 0;
 }
 
+
 .user-avatar {
     width: 75px;
     height: 75px;
     border-radius: 50%;
+}
+
+.user-avatar-small {
+    width: 50px;
+    height: 50px;
 }
 
 .user-avatar-big {
@@ -498,6 +507,24 @@ select {
 .user-details-labels {
     display: flex;
     flex-direction: column;
+
+}
+
+.profile-menu {
+    width: 50px;
+    height: 50px;
+}
+
+.admin-panel {
+    display: flex;
+    align-items: center;
+    gap: var(--space-l);
+}
+
+.welcome-user {
+    display: inherit;
+    align-items: inherit;
+    gap: var(--space-m);
 }
 
 .user-details-values {
@@ -546,6 +573,17 @@ table {
     border-collapse: collapse;
     margin-top: var(--space-m);
 }
+
+textarea {
+    background: var(--color-main-navy);
+    color: var(--color-text);
+    resize: none;
+    font-size: 18px;
+    padding: var(--space-s);
+    border-radius: var(--border-radius-s);
+    margin-bottom: var(--space-s);
+}
+
 
 th,
 td {

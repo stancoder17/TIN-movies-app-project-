@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Movies and series</title>
     <link rel="stylesheet" href="../stylesheets/main.css">
-    <link rel="stylesheet" href="../stylesheets/list.css">
+    <link rel="stylesheet" href="../stylesheets/productions.css">
 </head>
 <body>
 <header>
@@ -15,13 +15,26 @@
             <a class="navbar-text-button" id="navbar-img-button" href="#">
                 <img class="logo-img" src="../images/pngtree-video-film-camera-icon-picture-image_7817710.png" alt="logo">
             </a>
-            <a class="text-main navbar-text-button" href="#">MOVIES</a>
-            <a class="text-main navbar-text-button" href="#">SERIES</a>
+            <a class="text-main navbar-text-button" href="../htmls/productions.html">ALL PRODUCTIONS</a>
         </div>
 
-        <button type="button" onclick="window.location.href='../htmls/login.html'">LOG IN</button>
+        <div class="admin-panel">
+            <div class="navbar-main-buttons">
+                <a class="text-main navbar-text-button" href="../htmls/users.html">USERS</a>
+                <a class="text-main navbar-text-button" href="../htmls/ratings.html">RATINGS</a>
+                <a class="text-main navbar-text-button" href="../htmls/production-add.html">ADD PRODUCTION</a>
+            </div>
+            <div class="welcome-user">
+                <h2 class="text-main">Welcome, randomuser9419</h2>
+                <a href="../htmls/user-profile.html">
+                    <img class="user-avatar user-avatar-small" src="../images/user-avatar-example.jpg" alt="User Menu">
+                </a>
+                <a href="../htmls/login.html">
+                    <h3 class="text-main-dark">LOG OUT</h3>
+                </a>
+            </div>
+        </div>
     </div>
-
 </header>
 
 <main>
@@ -112,12 +125,12 @@
     </div>
 
     <div class="main-content">
-        <a class="media-block" href="../htmls/details.html">
+        <a class="media-block" href="production-details.html">
             <img class="media-poster" src="../images/posters/andor.jpg" alt="Andor poster">
 
             <div class="media-summary">
                 <h1 class="text-main">Andor</h1>
-                <h3 class="text-main date">(2022 - Present)</h3>
+                <h3 class="text-main text-main-dark">(2022 - Present)</h3>
                 <h3 class="text-main"><strong>Creator: </strong>Tony Gilroy</h3>
                 <p class="text-accent">In perilous times fraught with intrigue and betrayal, Cassian Andor joins the fight against the tyranny of the Galactic Empire. He soon becomes a hero of the Rebellion.</p>
             </div>
@@ -138,7 +151,7 @@
 
             <div class="media-summary">
                 <h1 class="text-main">Rogue One: A Star Wars Story</h1>
-                <h3 class="text-main date">(2016)</h3>
+                <h3 class="text-main text-main-dark">(2016)</h3>
                 <h3 class="text-main"><strong>Director: </strong>Gareth Edwards</h3>
                 <p class="text-accent">In a time of conflict, a group of unlikely heroes band together on a mission to steal the plans to the Death Star, the Empire's ultimate weapon of destruction.</p>
             </div>
@@ -158,7 +171,7 @@
 
             <div class="media-summary">
                 <h1 class="text-main">The Bear</h1>
-                <h3 class="text-main date">(2022 - Present)</h3>
+                <h3 class="text-main text-main-dark">(2022 - Present)</h3>
                 <h3 class="text-main"><strong>Creator: </strong>Christopher Storer</h3>
                 <p class="text-accent">A young chef from the fine dining world returns to Chicago to run his family's sandwich shop.</p>
             </div>
@@ -200,7 +213,7 @@
             <h5 class="text-main">Top 5 Series</h5>
 
             <ul class="list-unstyled">
-                <li><a href="#">Andor</a></li>
+                <li><a href="../htmls/production-details.html">Andor</a></li>
                 <li><a href="#">The Bear</a></li>
                 <li><a href="#">Star Wars: The Clone Wars</a></li>
                 <li><a href="#">The Mandalorian</a></li>

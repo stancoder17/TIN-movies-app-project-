@@ -53,14 +53,4 @@ input[type=date]{
     width: 150px;
 }
 
-textarea {
-    background: var(--color-main-navy);
-    color: var(--color-text);
-    resize: none;
-    font-size: 18px;
-    padding: var(--space-s);
-    border-radius: var(--border-radius-s);
-    margin-bottom: var(--space-s);
-}
-
 

@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Community users</title>
+    <title>Manage ratings</title>
     <link rel="stylesheet" href="../stylesheets/main.css">
-    <link rel="stylesheet" href="../stylesheets/users.css">
+    <link rel="stylesheet" href="../stylesheets/ratings.css">
 </head>
 <body>
 <header>
@@ -39,37 +39,39 @@
 
 <main>
     <div class="main-content">
-        <h1 class="text-main">Community Users</h1>
+        <h1 class="text-main">Manage ratings</h1>
         <hr class="separator">
 
         <table class="users-table">
             <thead>
             <tr>
                 <th class="text-main">ID</th>
-                <th class="text-main">Pfp</th>
-                <th class="text-main">Nickname</th>
-                <th class="text-main">Email</th>
-                <th class="text-main">Date of birth</th>
-                <th class="text-main">No of ratings</th>
+                <th class="text-main">Production</th>
+                <th class="text-main">User</th>
+                <th class="text-main">Rate</th>
+                <th class="text-main">Comment</th>
+                <th class="text-main">Date</th>
                 <th class="text-main">Actions</th>
             </tr>
             </thead>
             <tbody>
             <tr>
                 <td class="text-main">1</td>
-                <td>
-                    <a href="../htmls/user-profile.html"><img class="user-avatar" src="../images/user-avatar-example.jpg" alt="User avatar"></a>
+                <td class="text-accent">
+                    <a href="production-details.html" class="text-accent">Andor</a>
                 </td>
                 <td class="text-main">
-                    <a href="../htmls/user-profile.html" class="text-main">randomuser9419</a>
+                    <a href="../htmls/user-profile.html" class="text-accent">randomuser9419</a>
                 </td>
-                <td class="text-accent">user9419@example.com</td>
-                <td class="text-accent">1995-04-12</td>
-                <td class="text-main">124</td>
+                <td class="text-main">9,5</td>
+                <td class="text-main">
+                    Andor was every bit as good as I was hoping for. It might be the best Star Wars series to date, I used to think it was The Mandalorian but these two seasons of Andor have been flawless. Of all the Star Wars series so far this one is probably the least known character but that doesn't mean it's any less interesting. Andor is a character from one of the best Star Wars movies, Rogue One. All the reviews have been great for Andor so that got my expectations even higher and so far they've all been met. It has a real gritty feel to it compared to the other Star Wars series and the visuals are great. It's also more adult oriented compared to the other shows so far. But the cast, led by Diego Luna, is the best thing about this show. Well that and the writing. These two seasons of Andor have been nothing short of incredible and easily the best thing Star Wars has done since the original trilogy.
+                </td>
+                <td class="text-main">2025-11-20</td>
                 <td>
                     <div class="action-buttons">
                         <form action="" method="POST" class="action-form">
-                            <button type="submit" class="table-btn btn-red">Ban</button>
+                            <button type="submit" class="table-btn btn-red">Delete</button>
                         </form>
                     </div>
                 </td>
@@ -77,17 +79,21 @@
 
             <tr>
                 <td class="text-main">2</td>
-                <td>
-                    <img class="user-avatar" src="../images/user-avatar-example2.jpg" alt="User avatar">
+                <td class="text-accent">
+                    <a href="production-details.html" class="text-accent">Andor</a>
                 </td>
-                <td class="text-main">andorking</td>
-                <td class="text-accent">andor.fan@example.com</td>
-                <td class="text-accent">1988-11-23</td>
-                <td class="text-main">45</td>
+                <td class="text-main">
+                    <a href="../htmls/user-profile.html" class="text-accent">andorking</a>
+                </td>
+                <td class="text-main">9,7</td>
+                <td class="text-main">
+                    Best Star Wars show. Maybe even one of the greatest TV shows ever made.
+                </td>
+                <td class="text-main">2025-11-20</td>
                 <td>
                     <div class="action-buttons">
                         <form action="" method="POST" class="action-form">
-                            <button type="submit" class="table-btn btn-red">Ban</button>
+                            <button type="submit" class="table-btn btn-red">Delete</button>
                         </form>
                     </div>
                 </td>
@@ -95,23 +101,29 @@
 
             <tr>
                 <td class="text-main">3</td>
-                <td>
-                    <img class="user-avatar" src="../images/user-avatar-example3.jpg" alt="User avatar">
+                <td class="text-accent">
+                    <a href="#" class="text-accent">The Bear</a>
                 </td>
-                <td class="text-main">TIN enjoyer</td>
-                <td class="text-accent">student@example.com</td>
-                <td class="text-accent">2002-05-30</td>
-                <td class="text-main">8</td>
+                <td class="text-main">
+                    <a href="../htmls/user-profile.html" class="text-accent">randomuser9419</a>
+                </td>
+                <td class="text-main">8,5</td>
+                <td class="text-main">
+                    The Bear absolutely lives up to all the hype that it's been getting. Normally this isn't a show that would interest me but after reading all the great reviews and seeing how it's on every "best show of the year" list I've seen so far I thought I'd give it go. This not only met my expectations but surpassed them in every way. This has been nominated for every award possible and deservingly so. I'm especially glad for Jeremy Allen White since I'm a big Shameless fan. He was fantastic in this and leads a great cast. I couldn't stop watching this, I binged the entire first two seasons over the course of a few days and was disappointed when it was over. There's a reason this show was nominated for so many awards.
+                </td>
+                <td class="text-main">2025-09-01</td>
                 <td>
                     <div class="action-buttons">
                         <form action="" method="POST" class="action-form">
-                            <button type="submit" class="table-btn btn-red">Ban</button>
+                            <button type="submit" class="table-btn btn-red">Delete</button>
                         </form>
                     </div>
                 </td>
             </tr>
+
             </tbody>
         </table>
+
     </div>
 </main>
 

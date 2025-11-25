@@ -5,6 +5,7 @@
     <title>randomuser9419</title>
     <link rel="stylesheet" href="../stylesheets/main.css">
     <link rel="stylesheet" href="../stylesheets/user-profile.css">
+    <link rel="stylesheet" href="../stylesheets/user-profile-rating-update.css">
 </head>
 <body>
 <header>
@@ -58,8 +59,8 @@
                 </div>
 
                 <div class="user-profile-buttons">
-                    <button class="btn-blue" type="button" onclick="window.location.href='../htmls/user-profile-update.html'">Edit profile</button>
-                    <button class="btn-red" type="button" onclick="window.location.href='#'">Delete account</button>
+                    <button class="btn-blue hidden" type="button" onclick="window.location.href='../htmls/user-profile-update.html'">Edit profile</button>
+                    <button class="btn-red hidden" type="button" onclick="window.location.href='#'">Delete account</button>
                 </div>
             </div>
         </div>
@@ -70,23 +71,19 @@
 
             <hr class="separator separator-bright">
 
-            <div class="comment">
+            <form class="comment" action="../htmls/user-profile.html">
 
                 <div class="comment-header">
 
                     <div class="production-info">
-                        <a href="production-details.html">
-                            <img class="media-poster" src="../images/posters/andor.jpg" alt="andor poster">
-                        </a>
-                        <a href="production-details.html">
-                            <h3 class="text-main">Andor</h3>
-                        </a>
+                        <img class="media-poster" src="../images/posters/andor.jpg" alt="andor poster">
+                        <h3 class="text-main">Andor</h3>
                     </div>
 
                     <div class="media-rating">
                         <h1>
                             <span class="rating-stars">★</span>
-                            <span class="rating-score">9,5</span>
+                            <label for="rating-score"></label><input type="number" id="rating-score" name="rating-score" value="9,5" max="10" min="0" step="0.1">
                             <span class="rating-scale">/10</span>
                         </h1>
                     </div>
@@ -98,15 +95,16 @@
                 </div>
 
                 <div class="comment-body">
-                    <p class="text-accent">Andor was every bit as good as I was hoping for. It might be the best Star Wars series to date, I used to think it was The Mandalorian but these two seasons of Andor have been flawless. Of all the Star Wars series so far this one is probably the least known character but that doesn't mean it's any less interesting. Andor is a character from one of the best Star Wars movies, Rogue One. All the reviews have been great for Andor so that got my expectations even higher and so far they've all been met. It has a real gritty feel to it compared to the other Star Wars series and the visuals are great. It's also more adult oriented compared to the other shows so far. But the cast, led by Diego Luna, is the best thing about this show. Well that and the writing. These two seasons of Andor have been nothing short of incredible and easily the best thing Star Wars has done since the original trilogy.</p>
+                    <label for="comment"></label><textarea id="comment" name="comment" placeholder="Comment">Andor was every bit as good as I was hoping for. It might be the best Star Wars series to date, I used to think it was The Mandalorian but these two seasons of Andor have been flawless. Of all the Star Wars series so far this one is probably the least known character but that doesn't mean it's any less interesting. Andor is a character from one of the best Star Wars movies, Rogue One. All the reviews have been great for Andor so that got my expectations even higher and so far they've all been met. It has a real gritty feel to it compared to the other Star Wars series and the visuals are great. It's also more adult oriented compared to the other shows so far. But the cast, led by Diego Luna, is the best thing about this show. Well that and the writing. These two seasons of Andor have been nothing short of incredible and easily the best thing Star Wars has done since the original trilogy.
+                    </textarea>
                 </div>
 
                 <div class="comment-actions">
-                    <button class="btn-blue" type="button" onclick="window.location.href='../htmls/user-profile-rating-update.html'">Edit</button>
-                    <button class="btn-red" type="button" onclick="window.location.href='#'">Delete</button>
+                    <button class="btn-blue" type="submit">Save</button>
+                    <button class="btn-red" type="button" onclick="window.location.href='../htmls/user-profile.html'">Cancel</button>
                 </div>
 
-            </div>
+            </form>
 
             <hr class="separator">
 
@@ -142,8 +140,8 @@
                 </div>
 
                 <div class="comment-actions">
-                    <button class="btn-blue" type="button" onclick="window.location.href='#'">Edit</button>
-                    <button class="btn-red" type="button" onclick="window.location.href='#'">Delete</button>
+                    <button class="btn-blue hidden" type="button" onclick="window.location.href='#'">Edit</button>
+                    <button class="btn-red hidden" type="button" onclick="window.location.href='#'">Delete</button>
                 </div>
             </div>
 
